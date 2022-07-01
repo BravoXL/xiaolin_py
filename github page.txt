@@ -1,0 +1,5 @@
+https://bravoxl.github.io/
+
+$ git config --global user.name bravoxl
+$ git config --global user.email "719321682@qq.com"
+$ git config --global user.password 123
