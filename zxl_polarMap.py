@@ -37,4 +37,4 @@ plot1.set_ylim(0,100)
 plot1.set_thetagrids(angle0_p*180/np.pi,Discipline_p)
 plt.legend(loc="best")
 plt.show()
-
+figure0.savefig('polar.svg',dpi=1200,)#.eps
