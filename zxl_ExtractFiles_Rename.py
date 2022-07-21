@@ -128,13 +128,26 @@
 
 # \\\\\\\\\把3_附件2_Annex II_20200515_Flyer_Xiangdong Wang改成 3_Flyer_20200110_Yang Du
 
+# import os
+# import datetime
+# import shutil
+# import re
+# chosfoler1=r"D:\CIBR\M毛军文老师指导摘要整理\按类别5类\3_Neuropsychiatric Disorders\新建文件夹"
+# outputfolder1=r"C:\Users\86135\Desktop\out"
+# for l,m,n in os.walk(chosfoler1):
+#     for i in os.scandir(l):
+#         if re.search("flyer", i.name, re.IGNORECASE) and ("pdf" in i.name):
+#             shutil.copy(l + "/" + i.name, outputfolder1 + "/" + "3_Flyer_" + i.name.split("_")[2]+"_"+i.name.rsplit("_",1)[1])
+
+
+# \\\\\\\\\执行文件夹 提取所有含有Record 的xlsx
 import os
 import datetime
 import shutil
 import re
-chosfoler1=r"D:\CIBR\M毛军文老师指导摘要整理\按类别5类\3_Neuropsychiatric Disorders\新建文件夹"
+choosefoler1=r"D:\CIBR\T谭禄彬\+学术报告\+2021启动内部学术交流会\执行"
 outputfolder1=r"C:\Users\86135\Desktop\out"
-for l,m,n in os.walk(chosfoler1):
+for l,m,n in os.walk(choosefoler1):
     for i in os.scandir(l):
-        if re.search("flyer", i.name, re.IGNORECASE) and ("pdf" in i.name):
-            shutil.copy(l + "/" + i.name, outputfolder1 + "/" + "3_Flyer_" + i.name.split("_")[2]+"_"+i.name.rsplit("_",1)[1])
+        if re.search("Record", i.name, re.IGNORECASE) and ("xlsx" in i.name) :
+            shutil.copy(l + "/" + i.name, outputfolder1 + "/" + i.name)
