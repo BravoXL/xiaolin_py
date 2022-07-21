@@ -11,11 +11,11 @@ import os# terminal ：pip install pdf2docx
 import shutil
 from pdf2docx import Converter
 def zxlpdf2docx(pdf_folder1):
-# "This is an easy-go file wrote by Xiaolin Zhang from CIBR. You can convert pdf to docx freely ever after!"
+# "This is an easy-go file wrote by BravoXL. You can convert pdf to docx freely ever after!"
     for l,m,n in os.walk(pdf_folder1):
         for i in os.scandir(l):
             cv = Converter(l+"/"+i.name)
             cv.convert(l+"/"+i.name.split(".")[0]+".docx", start=0, end=None)
             cv.close()
-zxlpdf2docx(r"D:\CIBR\M毛军文老师指导摘要整理\按类别5类\5_Happy Hour_1")
+zxlpdf2docx(r"D:\")
 
