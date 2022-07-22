@@ -17,6 +17,6 @@ def zxlpdf2docx(pdf_folder1):
             cv = Converter(l+"/"+i.name)
             cv.convert(l+"/"+i.name.split(".")[0]+".docx", start=0, end=None)
             cv.close()
-zxlpdf2docx(r"D:\zxl1")
+zxlpdf2docx(r"C:\Users\86135\Desktop\in")
 
 
