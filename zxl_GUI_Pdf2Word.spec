@@ -6,10 +6,10 @@ block_cipher = None
 
 a = Analysis(
     ['zxl_GUI_Pdf2Word.py'],
-    pathex=['C:\\Users\\86135\\AppData\\Local\\Programs'],
+    pathex=[],
     binaries=[],
     datas=[],
-    hiddenimports=[],
+    hiddenimports=['OpenCV.cv2'],
     hookspath=[],
     hooksconfig={},
     runtime_hooks=[],
@@ -35,7 +35,7 @@ exe = EXE(
     upx=True,
     upx_exclude=[],
     runtime_tmpdir=None,
-    console=False,
+    console=True,
     disable_windowed_traceback=False,
     argv_emulation=False,
     target_arch=None,
